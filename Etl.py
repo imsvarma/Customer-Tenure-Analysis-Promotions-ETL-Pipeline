@@ -77,7 +77,7 @@ metadata.create_all(engine)
 
 df_selected.to_sql('Customer',con=engine,if_exists='replace',index=False)
 
-
+df_selected.to_csv('Transformed_Customers.csv', index=False, header=True, sep=',') 
 
 
 
